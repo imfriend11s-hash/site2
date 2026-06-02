@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ќпераци€ Ч текстовый квест</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(145deg, #0a0f1e 0%, #0c1222 100%);
+            font-family: 'Segoe UI', 'Courier New', monospace;
+            color: #e5e9f0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .page {
+            max-width: 1100px;
+            width: 100%;
+            background: rgba(18, 25, 45, 0.65);
+            backdrop-filter: blur(3px);
+            border-radius: 2rem;
+            padding: 2rem;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(90, 150, 220, 0.3);
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFF 30%, #5aa5ff 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+        .sub {
+            text-align: center;
+            color: #a2b9e2;
+            border-bottom: 1px dashed #2e3a55;
+            display: inline-block;
+            width: auto;
+            margin: 0 auto 2rem auto;
+            padding-bottom: 0.3rem;
+            font-family: monospace;
+        }
+        .game-area {
+            background: #0f1422cc;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid #2a3958;
+            box-shadow: inset 0 0 8px #03060c, 0 10px 20px -5px #00000040;
+        }
+        iframe {
+            width: 100%;
+            height: 550px;
+            border-radius: 1rem;
+            border: 1px solid #2e4880;
+            background: #010101;
+        }
+        .download-btn {
+            background: linear-gradient(95deg, #1f2b48, #0f172f);
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            border: 1px solid #4c7acf;
+            transition: 0.2s;
+            margin-top: 0.5rem;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 14px 0 #00000033;
+        }
+        .download-btn:hover {
+            background: #2c3e6e;
+            transform: scale(1.01);
+            border-color: #86b3ff;
+            box-shadow: 0 8px 22px #00000050;
+        }
+        .desc {
+            margin: 2rem 0 0.5rem;
+            line-height: 1.5;
+            background: #01081470;
+            padding: 1rem 1.5rem;
+            border-radius: 1.2rem;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #5a6e92;
+            margin-top: 2rem;
+        }
+        .flex-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 700px) {
+            .page {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            iframe {
+                height: 480px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>? ќѕ≈–ј÷»я ?</h1>
+    <div style="text-align: center;">
+        <div class="sub">побег из запретной лаборатории</div>
+    </div>
+
+    <div class="game-area">
+        <iframe src="https://www.online-python.com/OCsNZT9YSJ1"  title="ќпераци€ Ч онлайн квест"></iframe><!-- ^ сюда нужно вставить рабочий embed-код с твоей игрой ^ -->
+    </div>
+
+    <div class="flex-buttons">
+        <a href="Operacia.zip" download class="download-btn">
+            ?? — ј„ј“№ »√–” (.ZIP)
+        </a>
+    </div>
+
+    <div class="desc">
+        ? **—южет**: компани€ по исследованию мутаций заманила людей под видом лагер€. “ы просыпаешьс€ в лаборатории.
+        ƒевочка Ћена предупреждает: если врачи проведут операцию Ч вы превратитесь в зомби. Ќужно найти ключ, код и спасти всех.<br><br>
+        ?? ”правление: вводи цифры (1, 2, 3) и отвечай Ђда/нетї. “екстова€ игра с инвентарЄм и ветвлени€ми.
+    </div>
+    <footer>
+        by FRIEND11S Ч первый самосто€тельный квест. —вобода, код и темные коридоры.
+    </footer>
+</div>
+</body>
+</html>
